@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="">
+</head>
+<title> Forms</title>
+<body>
+
+<form action="submit.html"  method="post">
+<fieldset>
+<legend>Personal Details</legend>
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname" required><br>
+<label for="mname">Middle Name:</label>
+<input type="text" id="mname" name="mname"><br>
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" name="lname" required><br><br>
+<label for="DOB">Date & Time of Birth:</label>
+<input type="datetime-local" id="DOB" name="DOB" required><br><br>
+
+
+<label for="gender">Select your gender:</label><br>
+<input type="radio" id="Male" value="Male" name="gender">
+<label for="Male"> MALE </label><br>
+<input type="radio" id="Female" value="Female" name="gender">
+<label for="Female"> FEMALE </label><br>
+<input type="radio" id="Transgender" value="Transgender" name="gender">
+<label for="Transgender"> TRANSGENDER </label><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Contact Details:</legend>
+<label for="country_code">Country code:</label>
+<input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}"><br><br>
+<label for="mobile">Enter your contact number: </label>
+<input type="number" id="mobile" name="email" required><br><br>
+
+<label for="telephone">Enter your telephone number: </label>
+<input type="tel" id="telephone" name="telephone"><br><br>
+
+<label for="email">Enter your email-id: </label>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="linkedin">Enter your Linkedin profile url: </label>
+<input type="url" id="linkedin" name="linkedin" required><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Security Details:</legend>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br><br>
+<label for="cpassword">Confirm Password:</label>
+<input type="password" id="cpassword" name="cpassword" required><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Languages Known & Course Details:</legend>
+<input type="checkbox" id="language" name="language">
+<label for="English"> English </label><br>
+<input type="checkbox" id="language" name="language">
+<label for="Hindi"> Hindi </label><br>
+<input type="checkbox" id="language" name="language">
+<label for="Telugu"> Telugu </label><br>
+<input type="checkbox" id="language" name="language">
+<label for="Oriya"> Oriya </label><br>
+<input type="checkbox" id="language" name="language">
+<label for="Bengali"> Bengali </label><br><br>
+
+<label for="course">Select the  course:</label>
+<select id="course" name="course">
+<option value="Choose your course">Choose your course</option>
+<option value="B.Tech(CSE)">B.Tech(CSE)</option>
+<option value="B.Tech(CSE)">B.Tech(CSE)</option>
+<option value="B.Tech(CSE)">B.Tech(CSE)</option>
+<option value="B.Tech(CSE)">B.Tech(CSE)</option>
+</select><br><br>
+</fieldset>
+
+
+<fieldset>
+<legend>Other Details:</legend>
+<label for="date">Today's Date is:</label>
+<input type="date" id="date" name="date" ><br><br>
+
+<label for="time">Current Time is:</label>
+<input type="time" id="time" name="time"><br><br>
+
+<label for="week">Current Week is:</label>
+<input type="week" id="week" name="week"><br><br>
+
+<label for="month">Current Month is:</label>
+<input type="month" id="month" name="month"><br><br>
+
+<label for="favcolor">Choose your favourite colour:</label>
+<input type="color" id="favcolor" name="favcolor"><br><br>
+
+<label for="search">Type here to search: </label>
+<input type="search" id="search" name="search"><br><br>
+
+<label for="range">Range:</label>
+<input type="range" id="range" name="range"><br><br>
+
+<label for="marksheet">Upload your 10th result </label>
+<input type="file" id="marksheet" name="marksheet" required><br><br>
+
+<label for="photo">Upload your photo</label>
+<input type="file" id="photo" name="photo" required><br><br>
+</fieldset>
+
+<br><textarea name="message" rows="10" cols="97">
+Enter your query here:
+</textarea><br><br>
+
+<input type="button" onclick="alert('Click on Submit button to proceed.')" value="Click me to validate">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
